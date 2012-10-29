@@ -7,7 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface FlashCardsViewController : UIViewController
+#import "FlashCardsProblem.h"
+
+@interface FlashCardsViewController : UIViewController {
+    
+    NSMutableArray *workingList;
+    AVAudioPlayer *correctPlayer;
+    AVAudioPlayer *wrongPlayer;
+    FlashCardsProblem *currentProblem;
+    
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *problem;
+@property (weak, nonatomic) IBOutlet UILabel *answer;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *probType;
+
+
+- (IBAction)numberPressed:(UIButton *)sender;
+- (IBAction)answerPressed;
+- (IBAction)clearPressed;
+- (IBAction)problemTypeChanged;
+
+
+- (IBAction)handleSwipe:(UISwipeGestureRecognizer *)r;
 
 @end

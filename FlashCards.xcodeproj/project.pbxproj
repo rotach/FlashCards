@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791046671638C5B400579549 /* FlashCardsProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 791046661638C5B400579549 /* FlashCardsProblem.m */; };
+		798D5A87163B0E8600A6C308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D5A86163B0E8600A6C308 /* AVFoundation.framework */; };
+		798D5A8D163B14EE00A6C308 /* fail-buzzer-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798D5A8C163B14EE00A6C308 /* fail-buzzer-01.mp3 */; };
+		798D5A8F163B14FD00A6C308 /* magic-chime-02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 798D5A8E163B14FD00A6C308 /* magic-chime-02.mp3 */; };
 		79A26A8D16379E2300B74550 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A26A8C16379E2300B74550 /* UIKit.framework */; };
 		79A26A8F16379E2300B74550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A26A8E16379E2300B74550 /* Foundation.framework */; };
 		79A26A9116379E2300B74550 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A26A9016379E2300B74550 /* CoreGraphics.framework */; };
@@ -19,9 +23,16 @@
 		79A26AA616379E2300B74550 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A26AA416379E2300B74550 /* MainStoryboard_iPhone.storyboard */; };
 		79A26AA916379E2300B74550 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A26AA716379E2300B74550 /* MainStoryboard_iPad.storyboard */; };
 		79A26AAC16379E2300B74550 /* FlashCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A26AAB16379E2300B74550 /* FlashCardsViewController.m */; };
+		79A26AB41637A5B400B74550 /* FlashCardsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A26AB31637A5B400B74550 /* FlashCardsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		791046651638C5B400579549 /* FlashCardsProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardsProblem.h; sourceTree = "<group>"; };
+		791046661638C5B400579549 /* FlashCardsProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardsProblem.m; sourceTree = "<group>"; };
+		798D5A7E163AFE3400A6C308 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		798D5A86163B0E8600A6C308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		798D5A8C163B14EE00A6C308 /* fail-buzzer-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fail-buzzer-01.mp3"; sourceTree = "<group>"; };
+		798D5A8E163B14FD00A6C308 /* magic-chime-02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic-chime-02.mp3"; sourceTree = "<group>"; };
 		79A26A8816379E2300B74550 /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A26A8C16379E2300B74550 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79A26A8E16379E2300B74550 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +50,8 @@
 		79A26AA816379E2300B74550 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		79A26AAA16379E2300B74550 /* FlashCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashCardsViewController.h; sourceTree = "<group>"; };
 		79A26AAB16379E2300B74550 /* FlashCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashCardsViewController.m; sourceTree = "<group>"; };
+		79A26AB21637A5B400B74550 /* FlashCardsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardsModel.h; sourceTree = "<group>"; };
+		79A26AB31637A5B400B74550 /* FlashCardsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798D5A87163B0E8600A6C308 /* AVFoundation.framework in Frameworks */,
 				79A26A8D16379E2300B74550 /* UIKit.framework in Frameworks */,
 				79A26A8F16379E2300B74550 /* Foundation.framework in Frameworks */,
 				79A26A9116379E2300B74550 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +72,7 @@
 		79A26A7D16379E2300B74550 = {
 			isa = PBXGroup;
 			children = (
+				798D5A86163B0E8600A6C308 /* AVFoundation.framework */,
 				79A26A9216379E2300B74550 /* FlashCards */,
 				79A26A8B16379E2300B74550 /* Frameworks */,
 				79A26A8916379E2300B74550 /* Products */,
@@ -75,6 +90,7 @@
 		79A26A8B16379E2300B74550 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				798D5A7E163AFE3400A6C308 /* AudioToolbox.framework */,
 				79A26A8C16379E2300B74550 /* UIKit.framework */,
 				79A26A8E16379E2300B74550 /* Foundation.framework */,
 				79A26A9016379E2300B74550 /* CoreGraphics.framework */,
@@ -88,6 +104,10 @@
 				79A26A9B16379E2300B74550 /* FlashCardsAppDelegate.h */,
 				79A26A9C16379E2300B74550 /* FlashCardsAppDelegate.m */,
 				79A26AA416379E2300B74550 /* MainStoryboard_iPhone.storyboard */,
+				79A26AB21637A5B400B74550 /* FlashCardsModel.h */,
+				791046651638C5B400579549 /* FlashCardsProblem.h */,
+				791046661638C5B400579549 /* FlashCardsProblem.m */,
+				79A26AB31637A5B400B74550 /* FlashCardsModel.m */,
 				79A26AA716379E2300B74550 /* MainStoryboard_iPad.storyboard */,
 				79A26AAA16379E2300B74550 /* FlashCardsViewController.h */,
 				79A26AAB16379E2300B74550 /* FlashCardsViewController.m */,
@@ -99,6 +119,8 @@
 		79A26A9316379E2300B74550 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				798D5A8E163B14FD00A6C308 /* magic-chime-02.mp3 */,
+				798D5A8C163B14EE00A6C308 /* fail-buzzer-01.mp3 */,
 				79A26A9416379E2300B74550 /* FlashCards-Info.plist */,
 				79A26A9516379E2300B74550 /* InfoPlist.strings */,
 				79A26A9816379E2300B74550 /* main.m */,
@@ -168,6 +190,8 @@
 				79A26AA316379E2300B74550 /* Default-568h@2x.png in Resources */,
 				79A26AA616379E2300B74550 /* MainStoryboard_iPhone.storyboard in Resources */,
 				79A26AA916379E2300B74550 /* MainStoryboard_iPad.storyboard in Resources */,
+				798D5A8D163B14EE00A6C308 /* fail-buzzer-01.mp3 in Resources */,
+				798D5A8F163B14FD00A6C308 /* magic-chime-02.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +205,8 @@
 				79A26A9916379E2300B74550 /* main.m in Sources */,
 				79A26A9D16379E2300B74550 /* FlashCardsAppDelegate.m in Sources */,
 				79A26AAC16379E2300B74550 /* FlashCardsViewController.m in Sources */,
+				79A26AB41637A5B400B74550 /* FlashCardsModel.m in Sources */,
+				791046671638C5B400579549 /* FlashCardsProblem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +333,7 @@
 				79A26AB116379E2300B74550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
