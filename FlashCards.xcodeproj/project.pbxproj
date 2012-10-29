@@ -72,7 +72,6 @@
 		79A26A7D16379E2300B74550 = {
 			isa = PBXGroup;
 			children = (
-				798D5A86163B0E8600A6C308 /* AVFoundation.framework */,
 				79A26A9216379E2300B74550 /* FlashCards */,
 				79A26A8B16379E2300B74550 /* Frameworks */,
 				79A26A8916379E2300B74550 /* Products */,
@@ -90,6 +89,7 @@
 		79A26A8B16379E2300B74550 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				798D5A86163B0E8600A6C308 /* AVFoundation.framework */,
 				798D5A7E163AFE3400A6C308 /* AudioToolbox.framework */,
 				79A26A8C16379E2300B74550 /* UIKit.framework */,
 				79A26A8E16379E2300B74550 /* Foundation.framework */,
