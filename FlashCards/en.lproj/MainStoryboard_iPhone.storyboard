@@ -213,6 +213,32 @@
                                     <action selector="problemTypeChanged" destination="2" eventType="valueChanged" id="RcK-57-sWU"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-0x-abL">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-Li-eRc">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="1g6-9S-y6o"/>
+                                            <constraint firstAttribute="height" constant="89" id="L91-LF-rYz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="43"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startPressed" destination="2" eventType="touchUpInside" id="7OW-YP-Gwu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Cyq-Li-eRc" firstAttribute="top" secondItem="TqW-0x-abL" secondAttribute="top" constant="185" id="4Dj-LH-UVt"/>
+                                    <constraint firstItem="Cyq-Li-eRc" firstAttribute="centerX" secondItem="TqW-0x-abL" secondAttribute="centerX" type="default" id="u8F-7E-lGA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -222,6 +248,7 @@
                             <constraint firstItem="XmP-Hs-Jmh" firstAttribute="leading" secondItem="dGw-4J-Ql4" secondAttribute="leading" type="default" id="2Sa-e4-0mp"/>
                             <constraint firstAttribute="trailing" secondItem="BDp-kv-lVO" secondAttribute="trailing" constant="11" id="6VD-cm-vrL"/>
                             <constraint firstItem="svn-gP-1yJ" firstAttribute="leading" secondItem="cHH-31-jbH" secondAttribute="leading" type="default" id="6Ve-Tp-fAa"/>
+                            <constraint firstItem="TqW-0x-abL" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="74M-2A-iOP"/>
                             <constraint firstItem="5Tp-QK-iLA" firstAttribute="leading" secondItem="7h2-nf-efg" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="7hh-r1-j8Y"/>
                             <constraint firstItem="svn-gP-1yJ" firstAttribute="baseline" secondItem="uGY-MQ-pnc" secondAttribute="baseline" type="default" id="8UF-Zu-nDw"/>
                             <constraint firstAttribute="trailing" secondItem="haA-Vz-xZd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="A5F-p4-nKy"/>
@@ -243,13 +270,16 @@
                             <constraint firstItem="RZQ-HO-6mu" firstAttribute="leading" secondItem="5Tp-QK-iLA" secondAttribute="leading" type="default" id="QsM-6J-Q3f"/>
                             <constraint firstItem="RZQ-HO-6mu" firstAttribute="leading" secondItem="Ypw-t5-3gO" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RGb-Ds-iCv"/>
                             <constraint firstItem="5Tp-QK-iLA" firstAttribute="top" secondItem="uGY-MQ-pnc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RNA-CX-WYa"/>
+                            <constraint firstItem="TqW-0x-abL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="RuY-9P-8vK"/>
                             <constraint firstItem="5Tp-QK-iLA" firstAttribute="leading" secondItem="uGY-MQ-pnc" secondAttribute="leading" type="default" id="SoF-Hv-1S0"/>
                             <constraint firstItem="uGY-MQ-pnc" firstAttribute="leading" secondItem="svn-gP-1yJ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Vli-gD-3Oo"/>
                             <constraint firstItem="haA-Vz-xZd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XKA-Rh-wM0"/>
                             <constraint firstItem="cHH-31-jbH" firstAttribute="leading" secondItem="VPb-8Z-Psc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="YXT-dB-Ffo"/>
+                            <constraint firstItem="TqW-0x-abL" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="YdY-l6-nsJ"/>
                             <constraint firstItem="Ypw-t5-3gO" firstAttribute="leading" secondItem="7h2-nf-efg" secondAttribute="leading" type="default" id="Yjg-mg-j3V"/>
                             <constraint firstAttribute="bottom" secondItem="RZQ-HO-6mu" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ary-F8-Dv7"/>
                             <constraint firstItem="BDp-kv-lVO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="bCy-fp-Xf5"/>
+                            <constraint firstItem="TqW-0x-abL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="bDm-Kq-gxy"/>
                             <constraint firstItem="cHH-31-jbH" firstAttribute="top" secondItem="VPb-8Z-Psc" secondAttribute="top" type="default" id="bFk-kq-Kbl"/>
                             <constraint firstItem="yMW-fD-QWZ" firstAttribute="trailing" secondItem="xjH-jK-rEZ" secondAttribute="trailing" type="default" id="bdJ-Yf-IgW"/>
                             <constraint firstAttribute="bottom" secondItem="Bb9-Ab-xCO" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dqW-Vm-jTt"/>
@@ -276,6 +306,7 @@
                         <outlet property="answer" destination="yMW-fD-QWZ" id="4Wn-eR-gpd"/>
                         <outlet property="probType" destination="BDp-kv-lVO" id="Pyw-en-T6m"/>
                         <outlet property="problem" destination="haA-Vz-xZd" id="oLz-Ai-FgU"/>
+                        <outlet property="startView" destination="TqW-0x-abL" id="9NB-Lq-IZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -297,9 +328,11 @@
                 <relationship kind="action" name="handleSwipe:" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="action" name="numberPressed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="problemTypeChanged"/>
+                <relationship kind="action" name="startPressed"/>
                 <relationship kind="outlet" name="answer" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="probType" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="problem" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startView" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

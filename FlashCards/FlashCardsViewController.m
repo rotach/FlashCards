@@ -18,6 +18,10 @@
 @synthesize problem = _problem;
 @synthesize model = _model;
 
+
+@synthesize startView = _startView;
+
+
 - (FlashCardsModel *)model {
     if (!_model) {
         _model = [[FlashCardsModel alloc] init];
@@ -48,6 +52,12 @@
     }
     
     [self newProblem];
+    
+    
+    totalProblems = 3;
+    problemsComplete = 0;
+    //[[self startView] setAlpha:0.75];
+    //[[self startView] setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +73,21 @@
         [[self answer] setTextColor:[UIColor greenColor]];
 
         [correctPlayer play];
-        [self performSelector:@selector(newProblem) withObject:nil afterDelay:1];
+        
+        problemsComplete++;
+        if (problemsComplete < totalProblems) {
+            [self performSelector:@selector(newProblem) withObject:nil afterDelay:1];
+        } else {
+            //[[self startView] setHidden:NO];
+            float time = -[startTime timeIntervalSinceNow];
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            [formatter setMaximumFractionDigits:1];
+            [formatter setRoundingMode: NSNumberFormatterRoundDown];
+            NSString *numberString = [formatter stringFromNumber:[NSNumber numberWithFloat:time]];
+            
+            [[self answer] setText:numberString];
+        }
+
     } else {
         [self answerRed];
         [wrongPlayer play];
@@ -79,6 +103,11 @@
 
 - (IBAction)problemTypeChanged {
     [self newProblem];
+}
+
+- (IBAction)startPressed {
+    [[self startView] setHidden:YES];
+    startTime = [NSDate date];
 }
 
 
